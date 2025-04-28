@@ -181,7 +181,7 @@ class admin_panel:
         for things_list in self.groups.values():
             for thing in things_list:
                 if type(thing)== Device and thing.device_type==device_type:
-                    print (f'in {thing.group} device {thing} is {thing.status}')
+                    print (f'in {thing.group}, device {thing} is {thing.status}')
     
     def create_sensor(self,group_name,sensor_type,name):
         if group_name in self.groups:
